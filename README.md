@@ -72,6 +72,11 @@ The emergency submission ranks `shared_hands` and intentionally uses
 PYTHONPATH=src python -m unittest discover -s tests -v
 ```
 
+The public suite uses synthetic fixtures only. Private-workspace integration
+tests that require row-level derived evidence, private consumption receipts, or
+an absolute local path are intentionally not included; see
+[TESTING.md](TESTING.md).
+
 ## First-submission gate
 
 The public reference notebook scored about `0.5576` when inspected.  The current

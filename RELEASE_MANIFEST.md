@@ -10,6 +10,8 @@
 
 - `work/` (all row-level and derived tables), competition data, and submissions;
 - `reference/` (third-party notebook and metric copies);
+- private-workspace integration tests whose fixtures are evidence receipts or
+  absolute paths into `work/`;
 - virtual environments, caches, credentials, model artifacts, and bytecode.
 
 This public source archive documents the method, not any participant-only data
