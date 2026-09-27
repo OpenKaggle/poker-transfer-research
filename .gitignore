@@ -1,0 +1,24 @@
+# Data and participant-only material
+work/
+data/
+submissions/
+reference/
+
+# Local Python state
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.env.*
+
+# Large or derived outputs
+*.parquet
+*.zip
+*.tar
+*.tar.gz
+*.7z
+*.pt
+*.pth
+*.ckpt
+*.safetensors
