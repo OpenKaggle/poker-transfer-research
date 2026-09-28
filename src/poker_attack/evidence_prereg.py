@@ -201,7 +201,8 @@ def _atomic_parquet(path: Path, frame: pd.DataFrame) -> None:
 
 
 def _project_root() -> Path:
-    return Path(__file__).resolve().parents[3]
+    """Return the root of this public checkout, not its parent workspace."""
+    return Path(__file__).resolve().parents[2]
 
 
 def _validate_result_execution_authorization(
@@ -223,8 +224,8 @@ def _validate_result_execution_authorization(
     if binding.get("prereg_static_audit_sha256") != PREREG_STATIC_AUDIT_SHA256:
         raise PermissionError("authorization binds a different prereg static audit")
     project_root = _project_root()
-    draft_path = project_root / "poker/EVIDENCE_ONLY_VALIDATION_PREREG_DRAFT_V3.md"
-    prereg_audit_path = project_root / "poker/work/EVP_prereg_v3_static_audit.json"
+    draft_path = project_root / "EVIDENCE_ONLY_VALIDATION_PREREG_DRAFT_V3.md"
+    prereg_audit_path = project_root / "work/EVP_prereg_v3_static_audit.json"
     if _sha256(draft_path) != DRAFT_SHA256:
         raise PermissionError("the bound preregistration document changed")
     if _sha256(prereg_audit_path) != PREREG_STATIC_AUDIT_SHA256:

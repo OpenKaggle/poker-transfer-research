@@ -63,13 +63,13 @@ RESULT_EXECUTION_STATUS = "RESULT_BEARING_EXECUTION_APPROVED"
 CONSUMPTION_FILENAME = "EVP_v4_result_execution_consumed.json"
 
 CANONICAL_RELATIVE_PATHS = {
-    "draft": "poker/EVIDENCE_ONLY_VALIDATION_PREREG_DRAFT_V4.md",
-    "coverage": "poker/work/EVP_v4_metric_coverage_contract.json",
-    "method_audit": "poker/work/EVP_v4_independent_method_audit.json",
-    "historical_containment": "poker/work/EVP_implementation_containment_audit.json",
-    "v3_rejection": "poker/work/EVP_v3_source_audit_rejection.json",
-    "v4_containment": "poker/work/EVP_v4_implementation_containment_audit.json",
-    "v4_source_audit": "poker/work/EVP_v4_source_audit.json",
+    "draft": "EVIDENCE_ONLY_VALIDATION_PREREG_DRAFT_V4.md",
+    "coverage": "work/EVP_v4_metric_coverage_contract.json",
+    "method_audit": "work/EVP_v4_independent_method_audit.json",
+    "historical_containment": "work/EVP_implementation_containment_audit.json",
+    "v3_rejection": "work/EVP_v3_source_audit_rejection.json",
+    "v4_containment": "work/EVP_v4_implementation_containment_audit.json",
+    "v4_source_audit": "work/EVP_v4_source_audit.json",
 }
 
 STATIC_CANONICAL_SHA256 = {
@@ -227,7 +227,8 @@ class OuterFitStateV4:
 
 
 def _project_root() -> Path:
-    return Path(__file__).resolve().parents[3]
+    """Return the root of this public checkout, not its parent workspace."""
+    return Path(__file__).resolve().parents[2]
 
 
 def _sha256(path: Path) -> str:

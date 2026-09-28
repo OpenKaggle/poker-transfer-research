@@ -70,16 +70,16 @@ CONSUMPTION_FILENAME = "EVP_v4_1_result_execution_consumed.json"
 EXCEPTION_STOP_FILENAME = "EVP_v4_1_terminal_exception_stop.json"
 
 CANONICAL_RELATIVE_PATHS = {
-    "base_draft": "poker/EVIDENCE_ONLY_VALIDATION_PREREG_DRAFT_V4.md",
-    "delta": "poker/EVIDENCE_ONLY_VALIDATION_PREREG_V4_1_DELTA.md",
-    "coverage": "poker/work/EVP_v4_metric_coverage_contract.json",
-    "method_audit": "poker/work/EVP_v4_independent_method_audit.json",
-    "historical_containment": "poker/work/EVP_implementation_containment_audit.json",
-    "v3_rejection": "poker/work/EVP_v3_source_audit_rejection.json",
-    "rejected_v4_containment": "poker/work/EVP_v4_implementation_containment_audit.json",
-    "v4_1_containment": "poker/work/EVP_v4_1_implementation_containment_audit.json",
-    "v4_1_source_audit": "poker/work/EVP_v4_1_source_audit.json",
-    "schema": "poker/src/poker_attack/schema.py",
+    "base_draft": "EVIDENCE_ONLY_VALIDATION_PREREG_DRAFT_V4.md",
+    "delta": "EVIDENCE_ONLY_VALIDATION_PREREG_V4_1_DELTA.md",
+    "coverage": "work/EVP_v4_metric_coverage_contract.json",
+    "method_audit": "work/EVP_v4_independent_method_audit.json",
+    "historical_containment": "work/EVP_implementation_containment_audit.json",
+    "v3_rejection": "work/EVP_v3_source_audit_rejection.json",
+    "rejected_v4_containment": "work/EVP_v4_implementation_containment_audit.json",
+    "v4_1_containment": "work/EVP_v4_1_implementation_containment_audit.json",
+    "v4_1_source_audit": "work/EVP_v4_1_source_audit.json",
+    "schema": "src/poker_attack/schema.py",
 }
 
 STATIC_CANONICAL_SHA256 = {
@@ -277,7 +277,8 @@ class OuterFitStateV4:
 
 
 def _project_root() -> Path:
-    return Path(__file__).resolve().parents[3]
+    """Return the root of this public checkout, not its parent workspace."""
+    return Path(__file__).resolve().parents[2]
 
 
 def _sha256(path: Path) -> str:
