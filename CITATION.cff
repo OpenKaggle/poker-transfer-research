@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: >-
+  If you use this snapshot, please cite the versioned source archive and
+  review DATA_SOURCES.md before obtaining official inputs.
+title: Detect Suspicious Value Transfers in Poker Research Archive
+type: software
+authors:
+  - name: OpenKaggle contributors
+repository-code: https://github.com/OpenKaggle/poker-transfer-research
+url: https://github.com/OpenKaggle/poker-transfer-research/tree/snapshot-2026-09
+version: snapshot-2026-09
+date-released: 2026-09-28
+abstract: >-
+  Source-only archive for poker transfer-detection methods, tests,
+  preregistration records, and experiment-level evidence.
+keywords:
+  - Kaggle
+  - anomaly detection
+  - poker
+  - reproducibility

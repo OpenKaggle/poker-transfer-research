@@ -1,4 +1,4 @@
-# Detect Suspicious Value Transfers in Poker — research archive
+# [2026-09] Detect Suspicious Value Transfers in Poker — Research Archive
 
 An OpenKaggle source-and-provenance archive for the Kaggle competition. The
 implementation is retained for methodology and reproducibility review; it is
@@ -9,6 +9,12 @@ records, and experiment-level narrative. It intentionally excludes the
 competition download, all row-level derived tables, submissions, and copies of
 third-party reference notebooks. See [DATA_SOURCES.md](DATA_SOURCES.md) and
 [RELEASE_MANIFEST.md](RELEASE_MANIFEST.md).
+
+## Contribution summary
+
+This snapshot contributes the user-authored transfer-detection pipeline, tests,
+preregistration records, and experiment narrative. Official rows, submissions,
+private labels, and the third-party notebook remain at their original sources.
 
 Local, reproducible baseline for Kaggle's **Detect Suspicious Value Transfers in
 Poker** competition.
@@ -84,3 +90,21 @@ top-three public scores were around `0.8977` or higher.  Keep this branch active
 only if the first legal submission clears roughly `0.75`; target `0.82+` after the
 residual/time-burst ablation.  These thresholds are tactical, not guarantees of a
 private-leaderboard prize.
+
+## Cite this repository
+
+For this source snapshot, cite [`CITATION.cff`](CITATION.cff) or
+[`CITATION.bib`](CITATION.bib) and use the tagged
+[`snapshot-2026-09`](https://github.com/OpenKaggle/poker-transfer-research/tree/snapshot-2026-09)
+source state. This citation covers the source archive, not the excluded
+competition rows or submission files.
+
+## References
+
+- [Detect Suspicious Value Transfers in Poker](https://www.kaggle.com/competitions/detect-suspicious-value-transfers-in-poker)
+- [OpenKaggle publishing guide](https://github.com/OpenKaggle/.github/blob/main/PUBLISHING.md)
+
+## Release
+
+- Snapshot: [`snapshot-2026-09`](https://github.com/OpenKaggle/poker-transfer-research/tree/snapshot-2026-09)
+- Boundary and tests: [`RELEASE_MANIFEST.md`](RELEASE_MANIFEST.md)
