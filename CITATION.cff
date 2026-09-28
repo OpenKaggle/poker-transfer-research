@@ -5,7 +5,7 @@ message: >-
 title: Detect Suspicious Value Transfers in Poker Research Archive
 type: software
 authors:
-  - name: OpenKaggle contributors
+  - name: Jah-yee
 repository-code: https://github.com/OpenKaggle/poker-transfer-research
 url: https://github.com/OpenKaggle/poker-transfer-research/tree/snapshot-2026-09
 version: snapshot-2026-09
