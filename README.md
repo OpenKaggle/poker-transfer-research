@@ -1,5 +1,7 @@
 # [2026-09] Detect Suspicious Value Transfers in Poker — Research Archive
 
+> **Status: Ended — sealed after infrastructure failure (2026-09-20), incomplete termination documented.**
+
 An OpenKaggle source-and-provenance archive for the Kaggle competition. The
 implementation is retained for methodology and reproducibility review; it is
 not a data or submission release.
