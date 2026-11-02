@@ -2,6 +2,8 @@
 
 > **Status: Ended — sealed after infrastructure failure (2026-09-20), incomplete termination documented.**
 
+**Publication gate: 2026-09-20T23:59Z** (= poker transfers submission end; already elapsed — repo is public-eligible; visibility decision is separate)
+
 An OpenKaggle source-and-provenance archive for the Kaggle competition. The
 implementation is retained for methodology and reproducibility review; it is
 not a data or submission release.
